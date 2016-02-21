@@ -3,7 +3,8 @@ filetype off            " required
 
 " 设置包括vundle和初始化相关的runtime path
 set rtp+=$VIM/vimfiles/bundle/Vundle.vim
-call vundle#begin()
+let path='$VIM/vimfiles/bundle'
+call vundle#begin(path)
 " 另一种选择, 指定一个vundle安装插件的路径
 "call vundle#begin('~/some/path/here')
 
@@ -16,6 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Github上的插件
 " 格式为 Plugin '用户名/插件仓库名'
 "Plugin 'tpope/vim-fugitive'
+Plugin 'tomasr/molokai'
 
 " 来自 http://vim-scripts.org/vim/scripts.html 的插件
 " Plugin '插件名称' 实际上是 Plugin 'vim-scripts/插件仓库名' 只是此处的用户名可以省略
