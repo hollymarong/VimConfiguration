@@ -45,4 +45,8 @@ source $VIMRUNTIME/menu.vim
 language messages zh_CN.utf-8				" 解决consle输出乱码
 set ambiwidth=double						" 防止特殊符号无法显示
 
+" 总是显示状态栏
 set laststatus=2
+
+" NERDTree 自动启动
+autocmd vimenter * NERDTree
