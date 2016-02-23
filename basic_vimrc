@@ -50,3 +50,8 @@ set laststatus=2
 
 " NERDTree 自动启动
 autocmd vimenter * NERDTree
+let NERDTreeWinSize=25
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_width = 25
