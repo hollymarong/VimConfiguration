@@ -2,8 +2,14 @@ set nocompatible        " be iMproved, required
 filetype off            " required
 
 " 设置包括vundle和初始化相关的runtime path
-set rtp+=$VIM/vimfiles/bundle/Vundle.vim
-let path='$VIM/vimfiles/bundle'
+" 判断操作系统类型
+if(has('win32') || has('win64'))
+	set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+	let path='$VIM/vimfiles/bundle'
+else
+	set rtp+=~/.vim/bundle/Vundle.vim
+	let path='~/.vim/bundle'
+endif
 call vundle#begin(path)
 " 另一种选择, 指定一个vundle安装插件的路径
 "call vundle#begin('~/some/path/here')
