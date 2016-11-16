@@ -1,8 +1,7 @@
 set nocompatible
 
 " 主题
-colorscheme molokai
-let g:molokai_original = 1
+colorscheme Tomorrow-Night
 
 " 基础设置
 set guifont=Monaco:h14			" 字体 && 字号
@@ -28,6 +27,7 @@ set showmatch					" 显示括号配对情况
 "set foldmethod=syntax 			" 自动语法折叠
 set nobackup					" 禁止生成备份
 set noswapfile					" 不产生 swp 文件
+set noundofile                  " 禁止生产undo文件
 set mouse=a 					" 启用鼠标
 set nowrap						" 设置不自动折行
 set cursorline					" 突出显示当前行
@@ -70,7 +70,7 @@ nnoremap <C-N> :bn<CR>
 nnoremap <C-P> :bp<CR>
 
 " NERDTree 自动启动
-" autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree
 let NERDTreeWinSize=25
 
 " TagBar
